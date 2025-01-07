@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects and Arrays</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Objects and Arrays</h1>
-    </header>
-    <main>
-      <section id="players-section">
-        <h2>Players</h2>
-        <ul id="players-list"></ul>
-      </section>
-      <section id="person-section">
-        <h2>Person</h2>
-        <p id="person-details"></p>
-      </section>
-    </main>
-    <script src="script.js"></script>
+    <script>
+      // JavaScript code
+      const players = ["John", "Bob", "Alice", "Poppy"];
+      const person = {
+        name: "John Doe",
+        age: 80,
+      };
+
+      // Write your code here
+      const team = players; // Reference to the array players
+      const team1 = [...players]; // Copy of the array players
+      const cap1 = { ...person }; // Copy of the object person
+
+      console.log("Team (Reference):", team);
+      console.log("Team1 (Copy):", team1);
+      console.log("Cap1 (Copy):", cap1);
+    </script>
   </body>
 </html>
+
